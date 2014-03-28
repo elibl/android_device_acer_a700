@@ -2,6 +2,8 @@ PRODUCT_AAPT_PREF_CONFIG := xlarge hdpi
 
 $(call inherit-product-if-exists, vendor/acer/a700/a700-vendor.mk)
 
+PRODUCT_PACKAGE_OVERLAYS += device/acer/a700/overlay
+
 # USB config contains product-specific USB id
 PRODUCT_COPY_FILES += \
     device/acer/a700/prebuilt/ramdisk/init.acer.usb.rc:root/init.acer.usb.rc \
